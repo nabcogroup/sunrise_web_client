@@ -1,0 +1,73 @@
+<section class="content-header">
+  <h1>Villa Register
+    <small>{{action}}</small>
+  </h1>
+</section>
+<section class="content">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box bix-primary">
+        <div class="box-body box-profile">
+          <img src="https://static.pexels.com/photos/206172/pexels-photo-206172.jpeg" alt="" class="profile-user-img img-responsive img-circle">
+          <h3 class="profile-username text-center">Villa No {{villa_no}}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#" data-toggle="tab">Settings</a>
+          </li>
+          <li>
+            <a href="#" data-toggle="tab">History</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <form action="" class="form-horizontal">
+            <div class="form-group">
+              <label for="" class="col-md-2 control-label">Location</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="col-md-2 control-label">Villa No</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="col-md-2 control-label">Description</label>
+              <div class="col-md-10">
+                <textarea class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="electricity_no" class="col-md-2 text-right">Electrity No:</label>
+              <div class="col-md-4">
+                <input name="electricity_no" type="text" class="form-control">
+              </div>
+              <label for="water_no" class="col-md-2 text-right">Water No:</label>
+              <div class="col-md-4">
+                <input name="water_no" type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="qtel_no" class="col-md-2 text-right">QTel No:</label>
+              <div class="col-md-4">
+                <input name="qtel_no" type="text" class="form-control">
+              </div>
+              <label for="capacity" class="col-md-2 text-right">Capacity:</label>
+              <div class="col-md-4">
+                <input name="capacity" type="number" class="form-control">
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

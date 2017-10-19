@@ -1,0 +1,60 @@
+<section class="content-header">
+    <h1>Property Villa List <small>Villa</small></h1>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="box">
+                <div class="box-header">
+                    <div class="col-sm-8">
+                        <h3 class="box-title">Villas</h3>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <button href="#" class="btn btn-default pull-right"> <i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="col-sm-12">
+                        <table class="table table-bordered table-hover dataTable">
+                            <thead>
+                                <tr role="row">
+                                    <th>No</th>
+                                    <th class="sorting">Villa No</th>
+                                    <th>Property</th>
+                                    <th>Electricity No</th>
+                                    <th>Water No</th>
+                                    <th>QTel No</th>
+                                    <th>Class</th>
+                                    <th>Rate</th>
+                                    <th>Status</th>
+                                    <th>Active</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let villa of villas; let i = index">
+                                    <td>{{i+1}}</td>
+                                    <td>{{villa.villa_no}}</td>
+                                    <td>{{villa.location}}</td>
+                                    <td>{{villa.electricity_no}}</td>
+                                    <td>{{villa.water_no}}</td>
+                                    <td>{{villa.qtel_no}}</td>
+                                    <td>{{villa.class_name}}</td>
+                                    <td>{{villa.rate}}</td>
+                                    <td>{{villa.status}}</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+</section>
+
+
