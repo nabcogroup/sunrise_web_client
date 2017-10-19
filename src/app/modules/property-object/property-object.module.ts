@@ -1,3 +1,5 @@
+import { SharedModule } from './../../shared/shared.module';
+import { GridViewComponent } from './../../shared/grid-view/grid-view.component';
 import { PropertyService } from './service/property.service';
 import { AdminComponent } from './../admin/admin.component';
 import { AdminModule } from './../admin/admin.module';
@@ -31,7 +33,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    AdminModule
+    AdminModule,
+    SharedModule
   ],
   declarations: [
     PropertyObjectComponent,
