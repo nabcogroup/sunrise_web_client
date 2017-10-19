@@ -12,12 +12,10 @@ export class ApiService {
 
   constructor(private http: Http) {
     this.headers.append('Content-Type', 'application/json');
-    this.headers.append('X-CSRF-TOKEN', 'NXRcpwGNJ4lm791NNmq2BmEXPjo6Ne30OdyC36DI');
     this.options = new RequestOptions({ 'headers': this.headers });
   }
 
   getApi(uri, params = null) {
-
     return this.http.get(this.baseUri + '/' + uri, this.options).map(result => result.json());
   }
 
