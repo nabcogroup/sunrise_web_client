@@ -1,37 +1,25 @@
-import { PropertyService } from './data-services/property-services/property.service';
-
-
+import { SharedModule } from './shared/shared.module';
+import { HttpModule } from '@angular/http';
 import { PropertyObjectModule } from './modules/property-object/property-object.module';
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppLoginModule } from './app-login/app-login.module';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
-import { DashboardComponent } from './sub-module/dashboard/dashboard.component';
-
-import { AppContentComponent } from './app-content/app-content.component';
-import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
-import { AppHeaderComponent } from './app-header/app-header.component';
-
-
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AppHeaderComponent,
-    AppSidebarComponent,
-    AppContentComponent,
-    DashboardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PropertyObjectModule
-  ],
-  providers: [
-    PropertyService
+    PropertyObjectModule,
+    AppLoginModule,
+    SharedModule
   ],
   bootstrap: [AppComponent]
 })

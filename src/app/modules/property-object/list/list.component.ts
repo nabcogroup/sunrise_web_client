@@ -1,5 +1,6 @@
+import { Properties } from './../models/properties';
+import { PropertyService } from './../service/property.service';
 import { RouterModule } from '@angular/router';
-import { PropertyService } from './../../../data-services/property-services/property.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  villas: any;
 
-  constructor(public propertyService: PropertyService, public activeRoute: RouterModule) { }
+  properties: Properties = new Properties();
+
+  constructor(private propertyService: PropertyService, public activeRoute: RouterModule) { }
 
   ngOnInit() {
-    this.villas = this.propertyService.propertObjects;
-    console.log(this.villas);
+    this.propertyService.getPropertyObjects(this.properties);
   }
 
 }

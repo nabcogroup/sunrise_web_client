@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,4 @@ export class PropertyObjectComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

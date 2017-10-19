@@ -1,8 +1,8 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { PropertyService } from './property-service.service';
+import { PropertyService } from './property.service';
 
-describe('PropertyServiceService', () => {
+describe('PropertyService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [PropertyService]

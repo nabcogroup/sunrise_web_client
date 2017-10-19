@@ -32,16 +32,16 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr *ngFor="let villa of villas; let i = index">
+                                <tr *ngFor="let villa of properties.villas; let i = index">
                                     <td>{{i+1}}</td>
                                     <td>{{villa.villa_no}}</td>
-                                    <td>{{villa.location}}</td>
+                                    <td>{{villa.full_location}}</td>
                                     <td>{{villa.electricity_no}}</td>
                                     <td>{{villa.water_no}}</td>
                                     <td>{{villa.qtel_no}}</td>
                                     <td>{{villa.class_name}}</td>
-                                    <td>{{villa.rate}}</td>
-                                    <td>{{villa.status}}</td>
+                                    <td>{{villa.rate_per_month}}</td>
+                                    <td>{{villa.full_status}}</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
